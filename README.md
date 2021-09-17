@@ -66,7 +66,7 @@ A list of commonly used resources that I find helpful are listed in the acknowle
 ### Built With
 
 This project is built in python and uses few framework such as:
-* [Bootstrap](https://github.com/ageitgey/face_recognition)
+* [face_recognition](https://github.com/ageitgey/face_recognition)
 
 
 
