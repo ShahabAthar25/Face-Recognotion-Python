@@ -67,6 +67,7 @@ A list of commonly used resources that I find helpful are listed in the acknowle
 
 This project is built in python and uses few framework such as:
 * [face_recognition](https://github.com/ageitgey/face_recognition)
+* [python-opencv](https://github.com/opencv/opencv)
 
 
 
@@ -103,9 +104,9 @@ You should make sure to install Python and Pip By pasting the following commands
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+This project is very helpful as it is used by many companies around the world for face recognition, one of the uses will be face id that is integrated in many phones nowadays
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+_For more examples, please refer to the [Documentation](https://github.com/ageitgey/face_recognition)_
 
 
 
@@ -138,14 +139,4 @@ Project Link: [https://github.com/your_username/repo_name](https://github.com/yo
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Img Shields](https://shields.io)
-* [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Pages](https://pages.github.com)
-* [Animate.css](https://daneden.github.io/animate.css)
-* [Loaders.css](https://connoratherton.com/loaders)
-* [Slick Carousel](https://kenwheeler.github.io/slick)
-* [Smooth Scroll](https://github.com/cferdinandi/smooth-scroll)
-* [Sticky Kit](http://leafo.net/sticky-kit)
-* [JVectorMap](http://jvectormap.com)
-* [Font Awesome](https://fontawesome.com)
+* [face_recognition](https://github.com/ageitgey/face_recognition)
