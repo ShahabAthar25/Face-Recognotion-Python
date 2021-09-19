@@ -1,12 +1,11 @@
 import face_recognition
 import os
 import cv2
-from face_recognition.api import face_locations
 
 KNOWN_FACES_DIR = "known_faces"
 UNKNOWN_FACES_DIR = "unknown_faces"
 TOLERANCE = 0.4
-FRAME_THICKNESS = 3
+FRAME_THICKNESS = 1
 FONT_THICKNESS = 2
 MODEL = "hog" # cnn
 
@@ -40,7 +39,7 @@ for filename in os.listdir(UNKNOWN_FACES_DIR):
             top_left = (face_location[3], face_location[0])
             bottom_right = (face_location[1], face_location[2])
 
-            color = [0, 255, 0]
+            color = [255, 255, 255]
 
             cv2.rectangle(image, top_left, bottom_right, color, FRAME_THICKNESS)
 
@@ -52,9 +51,9 @@ for filename in os.listdir(UNKNOWN_FACES_DIR):
                 image,
                 match,
                 (face_location[3]+10, face_location[2]+15),
-                cv2.FONT_HERSHEY_COMPLEX,
+                cv2.QT_FONT_NORMAL,
                 0.5,
-                (200, 200, 200),
+                (0, 0, 0),
                 FONT_THICKNESS)
     cv2.imshow(filename, image)
     cv2.waitKey(0)

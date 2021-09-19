@@ -19,8 +19,6 @@
   </p>
 </p>
 
-
-
 <!-- TABLE OF CONTENTS -->
 <details open="open">
   <summary>Table of Contents</summary>
@@ -47,39 +45,35 @@
   </ol>
 </details>
 
-
-
 <!-- ABOUT THE PROJECT -->
+
 ## About The Project
 
-There are many great README templates available on GitHub, however, I didn't find one that really suit my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
+This project is made in opencv-python and face_recognition, and is a Computer Vision project. open cv is used to make rectangle around faces and face_recogntion is used to detect and recognise faces, i am using the model **hog** as it runs faster on cpu but feel free to use **cnn**, and if it is not recognizing faces than turn the tolerance to **0.6**.
 
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should implement DRY principles to the rest of your life :smile:
-
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
+Make sure to read **Getting Started** before cloning and running the project.
 
 A list of commonly used resources that I find helpful are listed in the acknowledgements.
 
 ### Built With
 
 This project is built in python and uses few framework such as:
-* [face_recognition](https://github.com/ageitgey/face_recognition)
-* [python-opencv](https://github.com/opencv/opencv)
 
-
+- [face_recognition](https://github.com/ageitgey/face_recognition)
+- [python-opencv](https://github.com/opencv/opencv)
 
 <!-- GETTING STARTED -->
+
 ## Getting Started
 
-Clone the repo and set it up and place a picture and test.jpg in the Face-Recognition-Python folder, Be sure to install the Prerequisites and Packages.
+In this section i will give a overview to how to setup the project but you should read **Prerequisites** and **Installation**. install face_recognition and python-opencv and
+to make it recognise your face, make a dir with the path of known_faces/your_name, take a few photos and put half of them in known_faces/your_name and half of them in unknown_faces
 
 ### Prerequisites
 
 You should make sure to install Python and Pip By pasting the following commands:
-* Python
+
+- Python
   ```sh
   sudo apt-get install python
   ```
@@ -92,32 +86,29 @@ You should make sure to install Python and Pip By pasting the following commands
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/your_username_/Project-Name.git
+   git clone https://github.com/ShahabAthar25/Face-Recognotion-Python.git
    ```
 2. Install packages
    ```sh
-   pip install face_recognition
+   pip install face_recognition python-opencv
    ```
 
-
-
 <!-- USAGE EXAMPLES -->
+
 ## Usage
 
 This project is very helpful as it is used by many companies around the world for face recognition, one of the uses will be face id that is integrated in many phones nowadays
 
 _For more examples, please refer to the [Documentation](https://github.com/ageitgey/face_recognition)_
 
-
-
 <!-- ROADMAP -->
+
 ## Roadmap
 
 See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a list of proposed features (and known issues).
 
-
-
 <!-- CONTRIBUTING -->
+
 ## Contributing
 
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
@@ -129,14 +120,16 @@ Contributions are what make the open source community such an amazing place to l
 5. Open a Pull Request
 
 <!-- CONTACT -->
+
 ## Contact
 
 Your Name - [@your_twitter](https://twitter.com/MUnpopulur) - shahabathar25@gmail.com
 
 Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
 
-
-
 <!-- ACKNOWLEDGEMENTS -->
+
 ## Acknowledgements
-* [face_recognition](https://github.com/ageitgey/face_recognition)
+
+- [face_recognition](https://github.com/ageitgey/face_recognition)
+- [opencv-python](https://github.com/opencv/opencv)
