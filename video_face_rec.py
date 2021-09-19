@@ -24,11 +24,11 @@ for name in os.listdir(KNOWN_FACES_DIR):
 
 while True:
     ret, image = video.read()
-    locations = face_recognition.face_locations(image, model=MODEL)
-    encodings = face_recognition.face_encodings(image, locations)
+    small_image = cv2.resize(image, (0, 0), fx=0.5, fy=0.5)
+    locations = face_recognition.face_locations(small_image, model=MODEL)
+    encodings = face_recognition.face_encodings(small_image, locations)
 
     for face_encoding, face_location in zip(encodings, locations):
-        top, right, bottom, left = face_location
         results = face_recognition.compare_faces(known_faces, face_encoding, TOLERANCE)
         match = None
 
@@ -41,14 +41,14 @@ while True:
 
             color = [255, 255, 255]
 
-            cv2.rectangle(image, top_left, bottom_right, color, FRAME_THICKNESS)
+            cv2.rectangle(small_image, top_left, bottom_right, color, FRAME_THICKNESS)
 
             top_left = (face_location[3], face_location[2])
             bottom_right = (face_location[1], face_location[2]+22)
 
-            cv2.rectangle(image, top_left, bottom_right, color, cv2.FILLED)
+            cv2.rectangle(small_image, top_left, bottom_right, color, cv2.FILLED)
             cv2.putText(
-                image,
+                small_image,
                 match,
                 (face_location[3]+10, face_location[2]+15),
                 cv2.QT_FONT_NORMAL,
@@ -56,6 +56,6 @@ while True:
                 (0, 0, 0),
                 FONT_THICKNESS)
     
-    cv2.imshow(filename, image)
+    cv2.imshow(filename, small_image)
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
